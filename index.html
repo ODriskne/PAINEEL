@@ -70,7 +70,7 @@
         input:checked + .slider:before { transform: translateX(26px); }
     </style>
 
-    <!-- Firebase SDK Legado -->
+    <!-- Firebase SDK Legado (Necessário para rodar direto no navegador via script simples) -->
     <script src="https://gstatic.com"></script>
     <script src="https://gstatic.com"></script>
 </head>
@@ -80,15 +80,20 @@
     <p>Ativação e Desativação de Relés em Tempo Real</p>
 
     <div class="grid-container" id="painel-reles">
-        <!-- Os botões serão montados dinamicamente via JS abaixo -->
+        <!-- Os botões serão montados aqui pelo JavaScript -->
     </div>
 
     <script>
-        // CONFIGURAÇÃO CONFIGURADA COM SEUS DADOS ATUAIS
+        // SUAS CREDENCIAIS REAIS DO FIREBASE APLICADAS AQUI:
         const firebaseConfig = {
+            apiKey: "AIzaSyD-yY5_lvZTXIss87D4wBwLGDf9Wf6Tj-4",
+            authDomain: "painel-wi-fi.firebaseapp.com",
+            databaseURL: "https://painel-wi-fi-default-rtdb.firebaseio.com",
             projectId: "painel-wi-fi",
+            storageBucket: "painel-wi-fi.firebasestorage.app",
             messagingSenderId: "638482800434",
-            databaseURL: "https://firebaseio.com"
+            appId: "1:638482800434:web:28248d7ba301d540cd012b",
+            measurementId: "G-TN3567Q50W"
         };
         
         // Inicializando o Firebase
